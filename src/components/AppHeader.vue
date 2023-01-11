@@ -81,7 +81,7 @@
     </header>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins'as *;
 
@@ -120,15 +120,19 @@ header {
                         a {
                             color: black;
                             padding: 20px 0;
+
+                            &:hover {
+                                color: $color-link_active-hover;
+                            }
                         }
                     }
 
                     li.active-select {
                         padding-bottom: 45px 0;
-                        border-bottom: 5px solid #0282f9;
+                        border-bottom: 5px solid $color-link_active-hover;
 
                         a {
-                            color: #0282f9;
+                            color: $color-link_active-hover;
                         }
                     }
                 }

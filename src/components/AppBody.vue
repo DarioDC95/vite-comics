@@ -17,7 +17,7 @@
     </main>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
     @use '../styles/partials/mixins'as *;
 
     main {
