@@ -115,6 +115,7 @@ header {
 
                         a {
                             color: black;
+                            padding: 20px 0;
                         }
                     }
 
