@@ -59,6 +59,7 @@
         }
     }
 </script>
+
 <template>
     <header>
         <div class="mycontainer">
@@ -69,7 +70,9 @@
                 <div class="mycol-lg">
                     <nav>
                         <ul>
-                            <li v-for="(value, index) in menu" :key="index" :class="value.active ? 'active-select' : ''"><a class="underline-none" :href="value.url">{{ value.label }}</a></li>
+                            <li v-for="(value, index) in menu" :key="index" :class="value.active ? 'active-select' : ''">
+                                <a class="underline-none" :href="value.url">{{ value.label }}</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -77,6 +80,7 @@
         </div>
     </header>
 </template>
+
 <style lang="scss">
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins'as *;
