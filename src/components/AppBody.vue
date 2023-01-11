@@ -19,12 +19,13 @@
 
 <style scoped lang="scss">
     @use '../styles/partials/mixins'as *;
+    @use '../styles/partials/variables' as *;
 
     main {
         font-size: 20px;
         font-weight: 600;
         color: white;
-        background-color: black;
+        background-color: $bg-black;
         padding: 60px 0;
 
         .mycontainer {

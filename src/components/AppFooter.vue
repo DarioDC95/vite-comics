@@ -168,7 +168,36 @@
                     </div>
                     <div class="mycol">
                         <div class="mycard">
-
+                            <div class="follow-us">FOLLOW US</div>
+                            <div>
+                                <ul>
+                                    <li class="margin-right-xs">
+                                        <a href="#">
+                                            <img src="../assets/img/footer-facebook.png" alt="Logo Facebook">
+                                        </a>
+                                    </li>
+                                    <li class="margin-right-xs">
+                                        <a href="#">
+                                            <img src="../assets/img/footer-twitter.png" alt="Logo Twitter">
+                                        </a>
+                                    </li>
+                                    <li class="margin-right-xs">
+                                        <a href="#">
+                                            <img src="../assets/img/footer-youtube.png" alt="Logo Youtube">
+                                        </a>
+                                    </li>
+                                    <li class="margin-right-xs">
+                                        <a href="#">
+                                            <img src="../assets/img/footer-pinterest.png" alt="Logo Pinterest">
+                                        </a>
+                                    </li>
+                                    <li class="margin-right-xs">
+                                        <a href="#">
+                                            <img src="../assets/img/footer-periscope.png" alt="Logo Periscope">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -212,10 +241,14 @@
                     }
                     
                     img {
-                        width: 45px;
+                        height: 60px;
                         margin-right: 10px;
                     }
                 }
+            }
+
+            .mycol-sm:last-child img {
+                height: 45px;
             }
         }
     }
@@ -270,6 +303,10 @@
                             a {
                                 color: $color-grey;
                                 font-size: 13px;
+
+                                &:hover {
+                                    color: $color-white;;
+                                }
                             }
                         }
                     }
@@ -280,7 +317,7 @@
 }
 
 .sign-up {
-    padding: 50px 0;
+    padding: 30px 0;
     background-color: $bg-brown;
     position: relative;
     z-index: 5;
@@ -289,7 +326,55 @@
         @include container-mix;
 
         .myrow {
-            
+            display: flex;
+            justify-content: space-between;
+
+            .mycol {
+                display: flex;
+                align-items: center;
+
+                .mycard {
+                    display: flex;
+                    align-items: center;
+                    
+                    button {
+                        padding: 15px 20px ;
+                        border: 3px solid $color-blue;
+                        background-color: transparent;
+                        font-weight: 600;
+                        font-size: 17px;
+                        color: $color-white;
+                        cursor: pointer;
+        
+                        &:hover {
+                            border: 3px solid $color-white;
+                            color: $color-blue;
+                        }
+        
+                        &:active {
+                            color: $color-white;
+                            background-color: $bg-black;
+                            border: 3px solid $color-blue;
+                        }
+                    }
+
+                    .follow-us {
+                        color: $color-blue;
+                        font-size: 17px;
+                        font-weight: 600;
+                        margin-right: 30px;
+                    }
+
+                    ul {
+                        display: flex;
+                        list-style-type: none;
+
+                        a:hover {
+                            filter: brightness(200%);
+                        }
+                    }
+                }
+            }
         }
     } 
 }
