@@ -255,7 +255,7 @@
 }
 
 .footer-links {
-    height: 400px;
+    padding-bottom: 60px;
     padding-top: 50px;
     background-image: url('../assets/img/footer-bg.jpg');
     background-repeat: no-repeat;
@@ -278,9 +278,10 @@
 
                     img {
                         position: absolute;
-                        top: -135px;
+                        top: -150px;
                         right: 0;
                         z-index: 1;
+                        width: 800px;
                     }
 
                     .dc-comics {
