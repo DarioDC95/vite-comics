@@ -82,10 +82,6 @@
                     display: flex;
                     justify-content: space-between;
                     flex-wrap: wrap;
-
-                    .mycol-sm {
-                        width: calc((100% - 120px) / 6);
-                    }
                 }
 
                 .button {
@@ -94,7 +90,7 @@
                     button {
                         padding: 15px 20px ;
                         border: 3px solid $color-blue;
-                        background-color: transparent;
+                        background-color: $color-blue;
                         font-weight: 600;
                         font-size: 17px;
                         color: $color-white;
@@ -102,12 +98,12 @@
         
                         &:hover {
                             border: 3px solid $color-white;
-                            color: $color-blue;
+                            color: $color-white;
                         }
         
                         &:active {
-                            color: $color-white;
-                            background-color: $bg-black;
+                            color: $bg-black;
+                            background-color: $color-white;
                             border: 3px solid $color-blue;
                         }
                     }

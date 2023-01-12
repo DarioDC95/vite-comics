@@ -12,19 +12,27 @@
 
 <template>
     <div class="mycard">
-        <img :src="image" :alt="serie">
+        <div class="container-img">
+            <img :src="image" :alt="serie">
+        </div>
         <h4>{{ serie }}</h4>
     </div>
 </template>
 
 <style scoped lang="scss">
     .mycard {
-        width: 100%;
+        width: 180px;
         margin-bottom: 40px;
         text-transform: uppercase;
 
-        img {
+        .container-img {
             margin-bottom: 20px;
-        };
+            height: 180px;
+            overflow: hidden;
+
+            img {
+                display: block;
+            }
+        }
     }
 </style>
