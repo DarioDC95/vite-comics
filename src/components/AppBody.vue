@@ -1,15 +1,15 @@
 <script>
     import AppComicsCards from './AppComicsCards.vue';
-    import dcComics from '../data/dc-comics';
     export default {
         name: 'AppBody',
         components: {
-            AppComicsCards,
-            dcComics
+            AppComicsCards
+        },
+        props: {
+            menu: Array
         },
         data() {
             return {
-                dcComicsCards: dcComics,
                 message: '-->Content goes here<--'
             }
         },
@@ -26,7 +26,7 @@
         <section class="main-content">
             <div class="mycontainer">
                 <div class="myrow">
-                    <div v-for="(value, index) in dcComicsCards.dcComics" :key="index" class="mycol-sm">
+                    <div v-for="(value, index) in menu" :key="index" class="mycol-sm">
                         <AppComicsCards :image="value.thumb" :serie="value.series"/>
                     </div>
                 </div>

@@ -2,18 +2,25 @@
   import AppHeader from './components/AppHeader.vue';
   import AppBody from './components/AppBody.vue';
   import AppFooter from './components/AppFooter.vue';
+  import dcComics from './data/dc-comics';
   export default {
     components: {
         AppHeader,
         AppBody,
-        AppFooter
+        AppFooter,
+        dcComics
+    },
+    data() {
+      return {
+        cardDcComics: dcComics
+      }
     }
   }
 </script>
 
 <template>
   <AppHeader />
-  <AppBody />
+  <AppBody :menu="cardDcComics.dcComics"/>
   <AppFooter />
 </template>
 
