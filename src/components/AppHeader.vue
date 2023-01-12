@@ -117,9 +117,14 @@ header {
                         font-size: 12px;
                         font-weight: 600;
 
+                        &:hover {
+                            padding-bottom: 45px 0;
+                            border-bottom: 5px solid $color-link_active-hover;
+                        }
+
                         a {
                             color: black;
-                            padding: 20px 0;
+                            padding: 50px 0;
 
                             &:hover {
                                 color: $color-link_active-hover;
