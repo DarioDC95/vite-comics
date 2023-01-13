@@ -2,13 +2,12 @@
   import AppHeader from './components/AppHeader.vue';
   import AppBody from './components/AppBody.vue';
   import AppFooter from './components/AppFooter.vue';
-  import dcComics from './data/dc-comics';
+  import dcComics from './data/dc-comics.json';
   export default {
     components: {
         AppHeader,
         AppBody,
-        AppFooter,
-        dcComics
+        AppFooter
     },
     data() {
       return {
@@ -20,7 +19,7 @@
 
 <template>
   <AppHeader />
-  <AppBody :menu="cardDcComics.dcComics"/>
+  <AppBody :menu="cardDcComics"/>
   <AppFooter />
 </template>
 
